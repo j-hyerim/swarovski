@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAROVSKI</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <link rel="stylesheet" href="./css/layout.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- script -->
+    <script src="./js/prefixfree.min.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js" integrity="sha512-Eenw6RBFiF4rO89LCaB5fkd4WXI4Y7GSRxrLMMWx73dZNcl+dBU3/pJtITD2gTCoEGIf/Ph3spwp0zZnF+UEJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+    <script type="text/javascript" src="js/snowfall.jquery.js"></script>
+    <script type="text/javascript" src="js/snowfall.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        
+            $('header').hover(function(){
+                $(this).css({
+                    'background':'#F0EEE4'
+                }),
+                $(this).css({
+                    'transition':'0.4s'
+                }),
+                $('#logo2').css({
+                    'opacity':'1'
+                }),
+                $('header *').css({
+                    'color':'#000'
+                });
+            },function(){
+                $(this).css({
+                    'background':'linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)'
+                }),
+                $('#logo2').css({
+                    'opacity':'0'
+                }),
+                $('header *').css({
+                    'color':'#fff'
+                });
+            })
+            $(document).snowfall({
+                image :"img/flake.png", 
+                minSize: 3, 
+                maxSize:10, 
+                flakeCount : 10
+             });
+            $('.badges').mouseover(function(){
+                $(document).snowfall({
+                image :"img/flake.png", 
+                minSize: 5, 
+                maxSize:20, 
+                flakeCount : 120
+                })
+            });
+            $('.badges').mouseout(function(){
+                $(document).snowfall({
+                image :"img/flake.png", 
+                minSize: 1, 
+                maxSize:5, 
+                flakeCount : 10
+                })
+            });
+        });
+        
+    </script>
+    
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header_inner">
+            <div class="h_inb_left">
+                <span class="material-symbols-outlined public">public</span><p><a href="#">대한민국</a></p>
+                <span class="material-symbols-outlined storefront">storefront</span><p><a href="#">매장</a></p>
+            </div>
+            <div class="h_inb_right">
+                <span class="material-symbols-outlined person">person</span><p><a href="login.html">로그인</a></p>
+                <span class="material-symbols-outlined favorite">favorite</span><p><a href="login.html">회원가입</a></p>
+            </div>
+            <div class="logo">
+                <img src="./img/swa-logo-white.svg" alt="logo" id="logo1"> <!--logo-->
+                <img src="./img/swa-logo-icon.svg" alt="logo" id="logo2">
+            </div>
+        </div>
+        <!-- main navigation -->
+        <nav class="h_gnb">
+            <ul>
+                <li><a href="#" title="NewItem">신상품</a></li>
+                <li>주얼리
+                    <div class="item_content">
+                        <div class="sub_wrap">
+                            <dl class="sub">
+                                <dt>네크리스&펜던트</dt>
+                                <dd><a href="#" title="네크리스">네크리스</a></dd>
+                                <dd><a href="#" title="펜던트">펜던트</a></dd>
+                                <dd><a href="#" title="초커">초커 네크리스</a></dd>
+                                <dd><a href="#" title="세트">세트</a></dd>
+                            </dl>
+                            <dl class="sub sub2">
+                                <dt>브레이슬릿</dt>
+                                <dd><a href="#" title="체인">체인 브레이슬릿</a></dd>
+                                <dd><a href="#" title="브레이슬릿">길이 조절 브레이슬릿</a></dd>
+                                <dd><a href="#" title="테니스">테니스 브레이슬릿</a></dd>
+                                <dd><a href="#" title="뱅글">뱅글 & 커프</a></dd>
+                            </dl>
+                            <dl class="sub">
+                                <dt>이어링</dt>
+                                <dd><a href="#" title="스터드">스터드 이어링</a></dd>
+                                <dd><a href="#" title="드롭">드롭 이어링</a></dd>
+                                <dd><a href="#" title="후프">후프 이어링</a></dd>
+                                <dd><a href="#" title="클럽">클럽 이어링</a></dd>
+                                <dd><a href="#" title="이어링">이어링 커브</a></dd>
+                                <dd><a href="#" title="싱글">싱글 이어링</a></dd>
+                            </dl>
+                            <dl class="sub sub2">
+                                <dt>링</dt>
+                                <dd><a href="#" title="헤일로">헤일로 링</a></dd>
+                                <dd><a href="#" title="밴드">밴드 링</a></dd>
+                                <dd><a href="#" title="칵테일">칵테일 링</a></dd>
+                                <dd><a href="#" title="모티브">모티브 링</a></dd>
+                                <dd><a href="#" title="오픈">오픈 링</a></dd>
+                                <dd><a href="#" title="스택">스택 링</a></dd>
+                            </dl>
+                            <dl class="sub">
+                                <dt>인기 아이템</dt>
+                                <dd><a href="#"><img src="./img/gnb_img1.jpg" alt="인기 아이템"></a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>워치
+                    <div class="item_content">
+                        <div class="sub_wrap">
+                            <dl class="sub">
+                                <dt><a href="#">여성용 워치</a></dt>
+                            </dl>
+                            <dl class="sub sub2">
+                                <dt><a href="#">워치 스트랩</a></dt>
+                            </dl>
+                            <dl class="sub">
+                                <dt>소재별 쇼핑</dt>
+                                <dd><a href="#" title="골드톤">골드톤 워치</a></dd>
+                                <dd><a href="#" title="로즈골드톤">로즈골드톤 워치</a></dd>
+                                <dd><a href="#" title="스테인리스">스테인리스 스틸 워치</a></dd>
+                                <dd><a href="#" title="래더">래더 스트랩 워치</a></dd>
+                                <dd><a href="#" title="실리콘">실리콘 스트랩 워치</a></dd>
+                                <dd><a href="#" title="메탈">메탈 브레이슬릿 워치</a></dd>
+                            </dl>
+                            <dl class="sub sub2">
+                                <dt>컬러별 쇼핑</dt>
+                                <dd><a href="#" title="블랙톤">블랙톤 워치</a></dd>
+                                <dd><a href="#" title="레드톤">레드톤 워치</a></dd>
+                                <dd><a href="#" title="화이트톤">화이트톤 워치</a></dd>
+                                <dd><a href="#" title="블루톤">블루톤 워치</a></dd>
+                                <dd><a href="#" title="그레이톤">그레이톤 워치</a></dd>
+                            </dl>
+                            <dl class="sub">
+                                <dt><a href="#">여성용 워치 둘러보기</a></dt>
+                                <dd><a href="#"><img src="./img/gnb_img2.jpg" alt="여성용 워치"></a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>액세서리
+                    <div class="item_content">
+                        <div class="sub_wrap">
+                            <ul class="accessory">
+                                <li class="sub">
+                                    <dt><a href="#" title="크리스털">크리스털 펜</a></dt>
+                                </li>
+                                <li class="sub">
+                                    <dt><a href="#" title="홀더">키 홀더</a></dt>
+                                </li>
+                                <li class="sub">
+                                    <dt><a href="#" title="핸드백">핸드백</a></dt>
+                                </li>
+                                <li class="sub">
+                                    <dt><a href="#" title="스마트폰">스마트폰 케이스</a></dt>
+                                </li>
+                                <li class="sub">
+                                    <dt><a href="#" title="선글라스">선글라스</a></dt>
+                                </li>
+                                <li class="sub">
+                                    <dt><a href="#" title="SWAROVSKI">SWAROVSKI 마스크</a></dt>
+                                </li>
+                                <li class="sub">
+                                    <dt><a href="#" title="디지털">디지털 악세서리</a></dt>
+                                </li>
+                                <li class="sub">
+                                    <dt><a href="#" title="헤어">헤어 악세서리</a></dt>
+                                </li>
+                                <li class="sub">
+                                    <dt><a href="#" title="바디">바디 주얼리</a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>스와로브스키의 세계
+                    <div class="item_content item_content2">
+                        <div class="sub_wrap">
+                            <dl class="sub sub2">
+                                <dt>스포트라이트</dt>
+                                <dd><a href="#" title="Aquazzura">Aquazzura for Swarovski Creators Lab</a></dd>
+                                <dd><a href="#" title="BMW">BMW, 스와로브스키를 만나다</a></dd>
+                                <dd><a href="#" title="아디다스와">아디다스와 스와로브스키의 만남</a></dd>
+                                <dd><a href="#" title="제임스">제임스 터렐의 Umbra</a></dd>
+                                <dd><a href="#" title="performance">Art of performance</a></dd>
+                            </dl>
+                            <dl class="sub">
+                                <dt>스타일 스토리</dt>
+                                <dd><a href="#" title="가이드">스타일 가이드 : 링</a></dd>
+                                <dd><a href="#" title="스타일">스타일 가이드 : 이어링</a></dd>
+                                <dd><a href="#" title="Lucent">Lucent</a></dd>
+                                <dd><a href="#" title="Millenia">Millenia</a></dd>
+                                <dd><a href="#" title="Dextera">Dextera</a></dd>
+                                <dd><a href="#" title="Harmonia">Harmonia</a></dd>
+                                <!-- <dd><a href="#" title="가이드">주얼리 스타일 가이드</a></dd>
+                                <dd><a href="#" title="컬러풀하게">컬러풀하게 주얼리 스타일링하기</a></dd> -->
+                            </dl>
+                            <dl class="sub sub2">
+                                <dt>인사이드 스와로브스키</dt>
+                                <dd><a href="#" title="지속">지속 가능성</a></dd>
+                                <dd><a href="#" title="기후">기후 중립적 배송 및 상품</a></dd>
+                                <dd><a href="#" title="새로운">새로운 매장 컨셉</a></dd>
+                                <dd><a href="#" title="회사소개">회사소개</a></dd>
+                                <dd><a href="#" title="법인구매">법인구매</a></dd>
+                                <dd><a href="#" title="프로페셔널">프로페셔널</a></dd>
+                                <!-- <dd><a href="#" title="Swarovski">Swarovski Created Diamonds</a></dd>
+                                <dd><a href="#" title="채용정보">채용정보</a></dd> -->
+                            </dl>
+                            <dl class="sub">
+                                <dt><a href="#">Aquazzura for Swarovski Creators Lab</a></dt>
+                                <dd><a href="#"><img src="./img/gnb_img3.jpg" alt="Aquazzura for Swarovski Creators Lab"></a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <div class="search">
+                    <input type="search" placeholder="검색어 입력" id="search">
+                    <label for="search"><span class="material-symbols-outlined search material-icons">search</span></label>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- Swiper -->
+        <section class="mainslide">
+            <h2>메인 광고 슬라이드</h2>
+            
+            <div class="swiper Mainslide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/mainslide2.jpg" alt="발전하는 스와로브 스키">
+                        <div class="ms_text">
+                            <h2>끝없는 재발명</h2>
+                            <p>영원히 간직하고 착용할 패션 주얼리를 찾으시나요?</p>
+                            <div class="btn ms_btn">쇼핑하기</div>
+                            <div class="btn ms_btn2">알아보기</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/mainslide1.jpg" alt="발전하는 스와로브 스키">
+                        <div class="ms_text">
+                            <h2>AQUAZZURA 샌들</h2>
+                            <p>새로운 발걸음으로 만나는 크리스탈 스타일</p>
+                           <div class="btn ms_btn">쇼핑하기</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/mainslide3.jpg" alt="발전하는 스와로브 스키">
+                        <div class="ms_text">
+                            <h2>데코레이션</h2>
+                            <p>크리스털 데코레이션과 오너먼트, 피겨린으로 상상의 세계로</p>
+                           <div class="btn ms_btn">베스트셀러</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/mainslide4.jpg" alt="발전하는 스와로브 스키">
+                        <div class="ms_text">
+                            <h2>최고의 선물</h2>
+                            <p>참신한 기프트 가이드로 완벽하게 시작하세요.</p>
+                            <div class="btn ms_btn">알아보기</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="bastseller">
+            <h2>베스트셀러</h2>
+            <!-- Swiper -->
+            <div #swiperRef="" class="swiper-container bastSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/harmonia1.jpg" alt="harmonia1">
+                        <p>Harmonia 스터드 이어링<br>쿠션 컷, 화이트, 믹스 메탈 피니시<br>
+                            175,000₩</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/harmonia2.jpg" alt="harmonia2">
+                        <p>Harmonia 초커 네크리스<br>
+                            쿠션 컷, 화이트, 믹스 메탈 피니시<br>
+                            700,000₩</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/harmonia3.jpg" alt="harmonia3">
+                        <p>Harmonia 커브<br>라운드 컷, 화이트, 로듐 플래팅<br>700,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/harmonia4.jpg" alt="harmonia4">
+                        <p>
+                            Harmonia 펜던트<br>오버사이즈 크리스털, 화이트, 믹스 메탈 피니시<br>245,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/dextera4.jpg" alt="dextera4">
+                        <p>
+                            Dextera 브레이슬릿<br>파베, 화이트, 골드 톤 플래팅<br>135,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/dextera1.jpg" alt="dextera1">
+                        <p>
+                            Dextera 네크리스<br>파베, 화이트, 골드 톤 플래팅<br>680,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/dextera2.jpg" alt="dextera2">
+                        <p>
+                            Dextera 후프 이어링<br>옥타곤 쉐입, 파베, 스몰, 화이트, 골드 톤 플래팅<br>205,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/dextera3.jpg" alt="dextera3">
+                        <p>
+                            Dextera 네크리스<br>파베, 화이트,골드 톤 플래팅<br>680,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/millenia1.jpg" alt="millenia1">
+                        <p>
+                            millenia 브레이슬릿<br>오버사이즈 크리스털, 옥타곤 컷, 그린, 골드 톤 플래팅<br>630,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/millenia2.jpg" alt="millenia2">
+                        <p>
+                            millenia 스터드 이어링<br>카이트 컷, 그린, 골드 플래팅<br>115,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/millenia3.jpg" alt="millenia3">
+                        <p>
+                            millenia 칵테일 링<br>옥타곤 컷, 그린, 골드 톤 플래팅<br>175,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/millenia4.jpg" alt="millenia4">
+                        <p>
+                            millenia 펜던트<br>옥타곤 컷, 그린, 골드 톤 플래팅<br>245,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/lucent1.jpg" alt="lucent1">
+                        <p>
+                            lucent 링<br>마그네틱 클로저, 피어 컷, 핑크, 로듐 플래팅<br>295,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/lucent2.jpg" alt="lucent2">
+                        <p>
+                            lucent 후프 이어링<br>스테이트먼트, 핑크<br>480,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/lucent3.jpg" alt="lucent3">
+                        <p>
+                            lucent 링<br>마그네틱 클로저, 핑크 로듐 플래팅<br>295,000₩
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/lucent4.jpg" alt="lucent4">
+                        <p>
+                            lucent 스터드 이어링<br>싱글, 핑크, 로즈골드 톤 플래팅<br>155,000₩
+                        </p>
+                    </div>
+                </div>  
+                <div class="swiper-button-next swiper-button"></div>
+                <div class="swiper-button-prev swiper-button"></div>
+            </div>
+        </section>
+        <section class="dreams scroll-spy">
+            <div class="bg_dreams back-to-position to-right"></div>
+            <div class="dreams_txtbox">
+                <h2 class="back-to-position to-left">Ignite Your Dreams</h2>
+                <p class="back-to-position to-left">1895년 이래 창립자 다니엘 스와로브스키의 혁신과 디자인을 향한 열정, 크리스털 커팅에 대한 전문성은 Swarovski를 주얼리와 액세서리에 있어 선도적 브랜드로 정의할 수 있도록 이끌었습니다.</p>
+                <div class="btn D_btn back-to-position to-left delay-1">쇼핑하기</div>
+            </div>
+        </section>
+        <section class="loveme">
+            <div class="l_bg">
+                <div class="l_textbox">
+                    <h2>나의 모든 모습을 사랑하세요</h2>
+                    <p>슈퍼모델 겸 모던 아이콘 벨라 하디드는 스와로브스키의 신규 캠페인에 힘을 불어넣는 뉴 페이스입니다. 지오바나 엥겔버트의 크리에이티브한 디렉션 아래 패션 사진작가 Mert & Marcus가 촬영한 생동감 넘치는 초상화 시리즈에서 벨라는 크리스털 파워를 통해 개성을 탐구하는 유쾌한 매력과 (재)창조의 무한한 가능성을 담았습니다. 빛, 컬러 그리고 스타일의 여정을 따라 벨라는 우리 모두의 다면적 본질을 표현합니다.</p>
+                    <div class="btn l_btn"><a>룩 쇼핑하기</a></div>
+                </div>
+                <div><img src="./img/swarovski_balla3.jpg" alt="blue balla" class="balla balla1 toggle_btn1"></div>
+                <div><img src="./img/swarovski_balla1.jpg" alt="pink balla" class="balla balla2 toggle_btn2"></div>
+                <div><img src="./img/swarovski_balla2.jpg" alt="yellow balla" class="balla balla3 toggle_btn3"></div>
+            </div>
+        </section>
+        <section class="promotion1 promotion scroll-spy">
+            <div class="pro_inner">
+                <div class="pro_textbox1 pro_textbox">
+                    <img src="./img/promotion1.jpg" alt="promotion 벨라" class="back-to-position to-left">
+                    <h2 class="back-to-position to-left delay-1">유쾌함 더하기</h2>
+                    <p class="back-to-position to-left delay-1">인생은 아름답고 우리는 즐겨야 하죠. 오버사이즈 후프와 캔디같은 크리스털 스트랜드는 여러분의 상상력에 끝없는 즐거움을 선사합니다. 지금 바로 빠져들어 보세요..</p>
+                    <div class="pro_btn back-to-position to-left delay-2"><a>쇼핑하기</a></div>
+                </div>
+                <div class="swiper proSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/pro-1.jpg" alt="핑크 넥클리스"></div>
+                        <div class="swiper-slide"><img src="./img/pro-2.jpg" alt="핑크 반지"></div>
+                        <div class="swiper-slide"><img src="./img/pro-3.jpg" alt="빅 큐빅 핑크 반지"></div>
+                        <div class="swiper-slide"><img src="./img/pro-4.jpg" alt="핑크 브로치"></div>
+                        <div class="swiper-slide"><img src="./img/pro-5.jpg" alt="핑크 이어링"></div>
+                        <div class="swiper-slide"><img src="./img/pro-6.jpg" alt="핑크 사파이어 반지"></div>
+                    </div>
+                    <div class="swiper-button-next swiper-button"></div>
+                    <div class="swiper-button-prev swiper-button"></div>
+                </div>
+            </div>
+        </section>
+        <section class="promotion2 promotion scroll-spy">
+            <div class="pro_inner">
+                <div class="pro_textbox2 pro_textbox">
+                    <img src="./img/promotion2.jpg" alt="promotion 벨라" class="back-to-position to-right">
+                    <h2 class="back-to-position to-right delay-1">고요함의 매력</h2>
+                    <p class="back-to-position to-right delay-1">정밀 컷 크리스털 스택이 시선을 사로잡도록 포즈를 취하세요. 손쉽게 완성하는 럭셔리한 무드의 싱글 블루 피스로 고요의 힘과 아름다움을 보여주세요.</p>
+                    <div class="pro_btn back-to-position to-right delay-2"><a>쇼핑하기</a></div>
+                </div>
+                <div class="swiper proSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/prom1.jpg" alt="블루 이어링"></div>
+                        <div class="swiper-slide"><img src="./img/prom2.jpg" alt="블루 넥클리스"></div>
+                        <div class="swiper-slide"><img src="./img/prom3.jpg" alt="블루 이어링"></div>
+                        <div class="swiper-slide"><img src="./img/prom4.jpg" alt="블루 사파이어 이어링"></div>
+                        <div class="swiper-slide"><img src="./img/prom5.jpg" alt="블루 팔지"></div>
+                    </div>
+                    <div class="swiper-button-next swiper-button"></div>
+                    <div class="swiper-button-prev swiper-button"></div>
+                </div>
+            </div>
+        </section>
+        <section class="promotion3 promotion scroll-spy">
+            <div class="pro_inner">
+                <div class="pro_textbox1 pro_textbox">
+                    <img src="./img/promotion3.jpg" alt="promotion 벨라" class="back-to-position to-left">
+                    <h2 class="back-to-position to-left delay-1">골든 라이트</h2>
+                    <p class="back-to-position to-left delay-1">기하학적인 체인 링크에서 영감을 받아 탄생한 세련미 넘치는 디자인으로 눈부신 햇빛을 담아냈습니다. 골드 메탈릭 아이템이 선사하는 스타일을 만나보세요.</p>
+                    <div class="pro_btn back-to-position to-left delay-2"><a>쇼핑하기</a></div>
+                </div>
+                <div class="swiper proSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/proy-1.jpg" alt="골든 팔지"></div>
+                        <div class="swiper-slide"><img src="./img/proy-2.jpg" alt="골든 넥클리스"></div>
+                        <div class="swiper-slide"><img src="./img/proy-3.jpg" alt="콜든 브로치"></div>
+                        <div class="swiper-slide"><img src="./img/proy-4.jpg" alt="골든 사파이어 ㅂ로치"></div>
+                        <div class="swiper-slide"><img src="./img/proy-5.jpg" alt="골든 링"></div>
+                        <div class="swiper-slide"><img src="./img/proy-6.jpg" alt="골든 이어링"></div>
+                    </div>
+                    <div class="swiper-button-next swiper-button"></div>
+                    <div class="swiper-button-prev swiper-button"></div>
+                </div>
+            </div>
+        </section>
+        <section class="world scroll-spy">
+            <div class="w_textbox">
+                <h2 class="back-to-position to-left">스와로브스키의 세계</h2>
+                <p class="back-to-position to-left">헤리티지부터 라이프스타일, 그리고 그 너머에 이르는 스와로브스키의 다채로운 측면을 조명합니다.</p>
+                <div class="btn w_btn back-to-position to-left delay-1">쇼핑하기</div>
+            </div>
+            <div class="tree"><img src="./img/worldtree.png" alt="나무장식"></div>
+            <div class="tree2"><img src="./img/worldtree.png" alt="나무장식"></div>
+            <div class="circle cir1 back-to-position to-right delay-2"></div>
+            <div class="circle cir2 back-to-position to-left delay-2"></div>
+            <div class="circle cir3 back-to-position to-left delay-3"></div>
+        </section>
+        <section class="gift scroll-spy">
+            <div class="bg"></div>
+            <div class="g_textbox">
+                <h2 class="back-to-position to-right">최고의 선물</h2>
+                <p class="back-to-position to-right">홀리데이 시즌은 물론 이후에도 완벽한 기억이 될 Swarovski 에디션을 만나보세요</p>
+                <div class="btn g_btn back-to-position to-right delay-1">쇼핑하기</div>
+            </div>
+            <div class="g_bg back-to-position to-left"></div>
+        </section>
+        <section class="store">
+            <div class="store_img"></div>
+        </section>
+        <section class="festival scroll-spy">
+            <div class="f_textbox">
+                <h2>축제 피겨린</h2>
+                <h3>기쁨이 넘치는 축제 오너먼트와 사랑에 빠지다</h3>
+                <p>홀리데이 심볼부터 산타와 순록까지, 사랑스러운 캐릭터와 피겨린이 마주치는 모든 이에게 놀라운 기쁨을 가져다줄 거예요. 홀리데이를 위한 테이블을 더욱 아름답게 장식하거나, 벽난로와 서랍장 위에 두고 오랜 추억을 되새기는 시간을 가져보는 것은 어떠세요?</p>
+                <div class="btn f_btn">쇼핑하기</div>
+            </div>
+            <div class="f_char f_h back-to-position to-right"><img src="./img/festival1.jpg" alt="말 장식"></div>
+            <div class="f_char f_s back-to-position to-right"><img src="./img/festival2.jpg" alt="별 장식"></div>
+            <div class="f_char f_c back-to-position to-left"><img src="./img/festival3.jpg" alt="사탕 장식"></div>
+            <div class="f_char f_m back-to-position to-left"><img src="./img/festival4.jpg" alt="진저맨 장식"></div>
+            <div class="f_char f_g back-to-position to-left delay-1"><img src="./img/festival_house.jpg" alt="회전목마"></div>
+            <div class="f_char f_i back-to-position to-right delay-1"><img src="./img/festival_innerhouse.jpg" alt="하우스 장식"></div>
+            <div class="f_char f_b back-to-position to-right delay-1"><img src="./img/festival_char.jpg" alt="곰돌이 다이아몬드"></div>
+        </section>
+        <aside class="badges">
+            <a href="#" title="크리스마스 이벤트">
+                <img src="./img/bagea.jpg" alt="크리스마스 상품 광고뱃지">
+            </a>
+            <br>    
+            <a href="#" title="크리스마스 다이아몬드">
+                <img src="./img/bagea2.jpg" alt="크리스마스 상품 광고뱃지">
+            </a>
+        </aside>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <a href="#" title="위로 바로가기" class="top_btn">
+            <span class="material-symbols-outlined">
+            arrow_upward
+            </span>
+        </a>
+        <section class="collabor">
+            <h2>우리들의 콜라보</h2>
+            <div class="f_swiper">
+                <!-- Swiper -->
+                <div #swiperRef="" class="swiper f_Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/Collaboration1.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration2.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration3.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration4.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration5.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration6.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration7.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration8.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration9.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration10.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration11.jpg" alt="Collaboration"></div>
+                        <div class="swiper-slide"><img src="./img/Collaboration12.jpg" alt="Collaboration"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next f_for">
+                </div>
+                <div class="swiper-button-prev f_back">
+                </div>
+            </div>
+        </section>
+
+        <div class="footer_bottom">
+            <nav class="f_gnb"></nav>
+            <address>Copyright ⓒ 2022 Swarovski. All rights reserved.<br>SWAROVSKI 및 SWAN 로고는 Swarovski AG의 등록상표입니다.</address>
+        </div>
+    </footer>
+
+    <script>
+    //main slide
+        var swiper = new Swiper(".Mainslide", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          loop : true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          
+        });
+
+    //best item swiper
+        var swiper = new Swiper(".bastSwiper", {
+        slidesPerView: 4,
+        slidesPerGroup : 4,
+        spaceBetween: 30,
+        loop : true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+      });
+
+    //   promotion swiper
+      var swiper = new Swiper(".proSwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        direction: "vertical",
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+      });
+
+      //footer swiper
+        var swiper = new Swiper(".f_Swiper", {
+            slidesPerView: 5,
+            centeredSlides: true,
+            loop:true,
+            spaceBetween: 5,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+        });
+      </script>
+</body>
+</html>
