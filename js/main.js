@@ -36,16 +36,43 @@ window.addEventListener('scroll', function(){
   }
 });
 
-const fadeEl = document.querySelectorAll('.fadeIn');
+
+//header off SCROLL 200<이면 HEADER_TOP 없애기
+window.addEventListener('scroll', function(){
+
+  const hEl= document.querySelector('.h_top');
+  const hbEl= document.querySelector('.h_bottom');
+
+  if(250<window.scrollY){
+    gsap.to(hEl, 0.6, {
+      opacity:0,
+      display:'none'
+    }),
+    gsap.to(hbEl, 0.6, {
+      opacity:1,
+      display:'block'
+    })
+  }else{
+    gsap.to(hEl, 0.6, {
+      opacity:1,
+      display:'block'
+    }),
+    gsap.to(hbEl, 0.6, {
+      opacity:0,
+      display:'none'
+    })
+  }
+}); 
 
 /* gsap.to(요소, 시간, 속성) */
+// const fadeEl = document.querySelectorAll('.fadeIn');
 
-fadeEl.forEach(function(fadeEl,index){
-  gsap.to(fadeEl,1,{
-    delay:(index+1)*0.7,  //0.7초씩 느리게 시간을 추가
-    opacity:1
-  });
-});
+// fadeEl.forEach(function(fadeEl,index){
+//   gsap.to(fadeEl,1,{
+//     delay:(index+1)*0.7,  //0.7초씩 느리게 시간을 추가
+//     opacity:1
+//   });
+// });
 
 //이미지 선택하면 관련 상품 표현하기
 const promotionEl1 = document.querySelector('section.promotion1');
@@ -87,4 +114,53 @@ spyEl.forEach(function(spyEl){
   })
   .setClassToggle(spyEl,'show')
   .addTo(new ScrollMagic.Controller());
+});
+
+$(document).ready(function(){
+        
+  $('.h_top').hover(function(){
+      $(this).css({
+          'background':'#F0EEE4',
+          'height':'310px',
+          'transition':'0.8s'
+      }),
+      $('#logo2').css({
+          'opacity':'1'
+      }),
+      $('header *').css({
+          'color':'#000'
+      });
+  },function(){
+      $(this).css({
+          'background':'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%)'
+      }),
+      $('#logo2').css({
+          'opacity':'0'
+      }),
+      $('header *').css({
+          'color':'#fff'
+      });
+  })
+  $(document).snowfall({
+      image :"img/flake.png", 
+      minSize: 3, 
+      maxSize:10, 
+      flakeCount : 10
+   });
+  $('.badges').mouseover(function(){
+      $(document).snowfall({
+      image :"img/flake.png", 
+      minSize: 5, 
+      maxSize:20, 
+      flakeCount : 120
+      })
+  });
+  $('.badges').mouseout(function(){
+      $(document).snowfall({
+      image :"img/flake.png", 
+      minSize: 1, 
+      maxSize:5, 
+      flakeCount : 10
+      })
+  });
 });
