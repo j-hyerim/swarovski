@@ -173,6 +173,7 @@ header *{
     transition: 0.4s;
     bottom: 18px;
 }
+
 /* footer */
 footer .top_btn{
     position: fixed;
@@ -214,7 +215,6 @@ footer .top_btn:hover{
     position: relative;
     padding: 40px 60px;
     margin: 0px 150px 0px 0px;
-    border-bottom: 1px solid rgb(57, 57, 57);
     margin: 0px auto;
 }
 footer .f_for,footer .f_back{
@@ -242,11 +242,40 @@ footer .swiper-slide img{
     cursor: pointer;
     transition: 1s;
 }
-.swiper-slide img:hover{
+footer .swiper-slide img:hover{
     filter: brightness(0.5);
 }
 .footer_bottom{
     height: 500px;
     background:#F0EEE4;
 }
-address{font-style: normal;}
+.f_inner{width: 1040px; margin: 0px auto;}
+.f_gnb{padding-top: 50px;}
+.f_gnb >ul{
+    display: flex;
+    justify-content: space-between;
+}
+.f_gnb >ul >li{
+    text-align: center;
+    
+}
+.f_gnb .sub a{
+    text-decoration: none;
+    color: #777;
+    line-height: 20px;
+    transition: 0.4s;
+}
+.f_gnb .sub a:hover{
+    color: #333;
+    font-weight: bold;
+}
+address{
+    margin-top: 100px;
+    display: inline-block;
+    font-style: normal;
+    color: #777;
+}
+.sns_icons{
+    margin-top: 100px;
+    display: inline-block;
+}
