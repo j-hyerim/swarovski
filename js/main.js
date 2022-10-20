@@ -127,7 +127,7 @@ $(document).ready(function(){
       $('#logo2').css({
           'opacity':'1'
       }),
-      $('header *').css({
+      $('.h_top *').css({
           'color':'#000'
       });
   },function(){
@@ -137,7 +137,7 @@ $(document).ready(function(){
       $('#logo2').css({
           'opacity':'0'
       }),
-      $('header *').css({
+      $('.h_top *').css({
           'color':'#fff'
       });
   })
