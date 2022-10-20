@@ -64,14 +64,11 @@ window.addEventListener('scroll', function(){
   }
 }); 
 
-/* gsap.to(요소, 시간, 속성) */
-// const fadeEl = document.querySelectorAll('.fadeIn');
-
-// fadeEl.forEach(function(fadeEl,index){
-//   gsap.to(fadeEl,1,{
-//     delay:(index+1)*0.7,  //0.7초씩 느리게 시간을 추가
-//     opacity:1
-//   });
+// fotter 이미지 클릭하면 텍스트 나오게
+// const fEl= document.querySelector('f_sd img');
+// const fbEl= document.querySelector('.f_text');
+// fEl.addEventListener('hover',function(){
+//   fbEl.height('150px')
 // });
 
 //이미지 선택하면 관련 상품 표현하기

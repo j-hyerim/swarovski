@@ -39,10 +39,8 @@ header *{
 }
 .logo{
     position: relative;
-    /* background-color: yellowgreen; */
     width: 100%;
     text-align: center;
-    /* top: 60px; */
 }
 .header_inner img{
     position: absolute;
@@ -182,7 +180,7 @@ header *{
     z-index: 1100;
 }
 .h_bottom .h_gnb >ul{
-    padding-top:15px ;
+    padding-top:18px ;
     justify-content: center;
     z-index: 1110;
 
@@ -209,7 +207,7 @@ header *{
 #logo{
     width: 150px;
     position: fixed;
-    top: 10px;
+    top: 15px;
     left: 60px;
     z-index: 1200;
 }
@@ -284,6 +282,8 @@ footer .f_back{
     left: 0px;
 }
 footer .swiper-slide{
+    overflow: hidden;
+    position: relative;
 }
 footer .swiper-slide img{
     width: 150px;
@@ -292,9 +292,24 @@ footer .swiper-slide img{
     cursor: pointer;
     transition: 1s;
 }
-footer .swiper-slide img:hover{
-    filter: brightness(0.5);
+.f_text{
+    position: absolute;
+    z-index: 15;
+    width: 150px;
+    height: 150px;
+    top: 0px;
+    left: 33px;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: #fff;
+    font-size: 12px;
+    line-height: 150px;
+    overflow: hidden;
+    transition: 1s;
 }
+.f_text:hover{
+    display: none;
+}
+/* 푸터 중 하단 */
 .footer_bottom{
     height: 500px;
     background:#F0EEE4;
@@ -302,13 +317,18 @@ footer .swiper-slide img:hover{
 .f_inner{
     width: 1040px; margin: 0px auto;
 }
-.f_gnb{padding-top: 50px;}
+.f_gnb{
+    padding-top: 50px;
+    border-bottom:1px solid rgba(119, 119, 119, 0.37);
+
+}
 .f_gnb >ul{
     display: flex;
     justify-content: space-between;
 }
 .f_gnb >ul >li{
     text-align: center;
+    font-size: 14px;
     
 }
 .f_gnb .sub a{
@@ -316,6 +336,7 @@ footer .swiper-slide img:hover{
     color: #777;
     line-height: 20px;
     transition: 0.4s;
+    font-size: 12px;
 }
 .f_gnb .sub a:hover{
     color: #333;
