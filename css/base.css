@@ -37,3 +37,4 @@ p{
     color: #000;
     font-weight: bold;
   }
+  main label{display: none;}

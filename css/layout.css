@@ -135,6 +135,7 @@ header *{
     position: relative;
     height: 34px;
     opacity: 1;
+    transform: translateY(-8px);
 }
 .search input{
     width: 34px;
@@ -221,7 +222,9 @@ header *{
     /* opacity: 0; */
     display: none;
 }
-
+.h_bottom ul li:hover{
+    color: yellowgreen;
+}
 /* footer */
 footer .top_btn{
     position: fixed;
@@ -304,10 +307,13 @@ footer .swiper-slide img{
     font-size: 12px;
     line-height: 150px;
     overflow: hidden;
+    display: block;
     transition: 1s;
 }
 .f_text:hover{
-    display: none;
+    /* top:300px; */
+    /* display: block; */
+    /* transform: translateX(-150px); */
 }
 /* 푸터 중 하단 */
 .footer_bottom{
@@ -316,6 +322,7 @@ footer .swiper-slide img{
 }
 .f_inner{
     width: 1040px; margin: 0px auto;
+    position: relative;
 }
 .f_gnb{
     padding-top: 50px;
@@ -349,9 +356,11 @@ address{
     color: #777;
 }
 .sns_icons{
-    float: right;
     margin-top: 100px;
     display: inline-block;
+    position: absolute;
+    z-index: 200;
+    right: 0px;
 }
 .fa-brands{
     font-size: 30px;

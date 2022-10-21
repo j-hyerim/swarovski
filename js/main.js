@@ -63,6 +63,41 @@ window.addEventListener('scroll', function(){
     })
   }
 }); 
+const fadeEl = document.querySelectorAll('.fadeIn');
+/* gsap.to(요소, 시간, 속성) */
+fadeEl.forEach(function(fadeEl,index){
+  gsap.to(fadeEl,1,{
+    delay:(index+1)*0.7,  //0.7초씩 느리게 시간을 추가
+    opacity:1
+  });
+});
+
+const fadeEl2 = document.querySelectorAll('.fadeIn2');
+/* gsap.to(요소, 시간, 속성) */
+fadeEl2.forEach(function(fadeEl,index){
+  gsap.to(fadeEl,1,{
+    delay:(index+10)*0.7,  //0.7초씩 느리게 시간을 추가
+    opacity:1
+  });
+});
+
+const fadeEl3 = document.querySelectorAll('.fadeIn3');
+/* gsap.to(요소, 시간, 속성) */
+fadeEl3.forEach(function(fadeEl,index){
+  gsap.to(fadeEl,1,{
+    delay:(index+17)*0.7,  //0.7초씩 느리게 시간을 추가
+    opacity:1
+  });
+});
+
+const fadeEl4= document.querySelectorAll('.fadeIn4');
+/* gsap.to(요소, 시간, 속성) */
+fadeEl4.forEach(function(fadeEl,index){
+  gsap.to(fadeEl,1,{
+    delay:(index+21)*0.7,  //0.7초씩 느리게 시간을 추가
+    opacity:1
+  });
+});
 
 // fotter 이미지 클릭하면 텍스트 나오게
 // const fEl= document.querySelector('f_sd img');
@@ -112,7 +147,7 @@ spyEl.forEach(function(spyEl){
   .setClassToggle(spyEl,'show')
   .addTo(new ScrollMagic.Controller());
 });
-
+// jquery
 $(document).ready(function(){
         
   $('.h_top').hover(function(){
@@ -138,6 +173,32 @@ $(document).ready(function(){
           'color':'#fff'
       });
   })
+//header bottom bg
+  $('.h_bottom ul li').hover(function(){
+    $('.mainbg').css({
+        'display':'block'
+        // 'opacity':'1'
+    });
+    },function(){
+      $('.mainbg').css({
+          'display':'none'
+          // 'opacity':'0'
+      });
+    })
+//fotter text
+  $('.f_sd').mouseover(function(){
+    $('.f_text').css({
+        'top':'150px'
+        // 'opacity':'1'
+    });
+  })
+  $('.f_sd').mouseout(function(){
+    $('.f_text').css({
+        'top':'0px'
+        // 'opacity':'1'
+    });
+  })
+
   $(document).snowfall({
       image :"img/flake.png", 
       minSize: 3, 
@@ -152,12 +213,8 @@ $(document).ready(function(){
       flakeCount : 120
       })
   });
-  $('.badges').mouseout(function(){
-      $(document).snowfall({
-      image :"img/flake.png", 
-      minSize: 1, 
-      maxSize:5, 
-      flakeCount : 10
-      })
-  });
+  // $('.badges').mouseout(function(){
+  //   $(document).snowfall().stop(false,false);
+  // });
 });
+// jquery d
