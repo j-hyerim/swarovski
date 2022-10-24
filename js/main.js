@@ -213,8 +213,6 @@ $(document).ready(function(){
       flakeCount : 120
       })
   });
-  // $('.badges').mouseout(function(){
-  //   $(document).snowfall().stop(false,false);
-  // });
+
 });
 // jquery d

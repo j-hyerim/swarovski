@@ -222,9 +222,7 @@ header *{
     /* opacity: 0; */
     display: none;
 }
-.h_bottom ul li:hover{
-    color: yellowgreen;
-}
+
 /* footer */
 footer .top_btn{
     position: fixed;

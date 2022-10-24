@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스와로브스키 신상품 홈페이지</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <link rel="stylesheet" href="./css/layout.css" type="text/css">
+    <link rel="stylesheet" href="./css/ni.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- font awosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- script -->
+    <script src="./js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script> 
+    <script defer src="./js/sub.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js" integrity="sha512-Eenw6RBFiF4rO89LCaB5fkd4WXI4Y7GSRxrLMMWx73dZNcl+dBU3/pJtITD2gTCoEGIf/Ph3spwp0zZnF+UEJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script type="text/javascript" src="js/snowfall.jquery.js"></script>
+    <script type="text/javascript" src="js/snowfall.js"></script> --> 
+    <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+
+</head>
+<body>
+        <!-- header -->
+        <header>
+            <div class="h_top">
+                <div class="header_inner">
+                    <div class="h_inb_left">
+                        <span class="material-symbols-outlined public">public</span><p><a href="#">대한민국</a></p>
+                        <span class="material-symbols-outlined storefront">storefront</span><p><a href="#">매장</a></p>
+                    </div>
+                    <div class="h_inb_right">
+                        <span class="material-symbols-outlined person">person</span><p><a href="login.html">로그인</a></p>
+                        <span class="material-symbols-outlined favorite">favorite</span><p><a href="login.html">회원가입</a></p>
+                    </div>
+                    <div class="logo">
+                        <img src="./img/swa-logo-white.svg" alt="logo" id="logo1"> <!--logo-->
+                        <img src="./img/swa-logo-icon.svg" alt="logo" id="logo2">
+                    </div>
+                </div>
+            <!-- main navigation -->
+                <nav class="h_gnb">
+                    <ul>
+                        <li><a href="#" title="NewItem">신상품</a></li>
+                        <li>주얼리
+                            <div class="item_content">
+                                <div class="sub_wrap">
+                                    <dl class="sub">
+                                        <dt>네크리스&펜던트</dt>
+                                        <dd><a href="#" title="네크리스">네크리스</a></dd>
+                                        <dd><a href="#" title="펜던트">펜던트</a></dd>
+                                        <dd><a href="#" title="초커">초커 네크리스</a></dd>
+                                        <dd><a href="#" title="세트">세트</a></dd>
+                                    </dl>
+                                    <dl class="sub sub2">
+                                        <dt>브레이슬릿</dt>
+                                        <dd><a href="#" title="체인">체인 브레이슬릿</a></dd>
+                                        <dd><a href="#" title="브레이슬릿">길이 조절 브레이슬릿</a></dd>
+                                        <dd><a href="#" title="테니스">테니스 브레이슬릿</a></dd>
+                                        <dd><a href="#" title="뱅글">뱅글 & 커프</a></dd>
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt>이어링</dt>
+                                        <dd><a href="#" title="스터드">스터드 이어링</a></dd>
+                                        <dd><a href="#" title="드롭">드롭 이어링</a></dd>
+                                        <dd><a href="#" title="후프">후프 이어링</a></dd>
+                                        <dd><a href="#" title="클럽">클럽 이어링</a></dd>
+                                        <dd><a href="#" title="이어링">이어링 커브</a></dd>
+                                        <dd><a href="#" title="싱글">싱글 이어링</a></dd>
+                                    </dl>
+                                    <dl class="sub sub2">
+                                        <dt>링</dt>
+                                        <dd><a href="#" title="헤일로">헤일로 링</a></dd>
+                                        <dd><a href="#" title="밴드">밴드 링</a></dd>
+                                        <dd><a href="#" title="칵테일">칵테일 링</a></dd>
+                                        <dd><a href="#" title="모티브">모티브 링</a></dd>
+                                        <dd><a href="#" title="오픈">오픈 링</a></dd>
+                                        <dd><a href="#" title="스택">스택 링</a></dd>
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt>인기 아이템</dt>
+                                        <dd><a href="#"><img src="./img/gnb_img1.jpg" alt="인기 아이템"></a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>워치
+                            <div class="item_content">
+                                <div class="sub_wrap">
+                                    <dl class="sub">
+                                        <dt><a href="#">여성용 워치</a></dt>
+                                    </dl>
+                                    <dl class="sub sub2">
+                                        <dt><a href="#">워치 스트랩</a></dt>
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt>소재별 쇼핑</dt>
+                                        <dd><a href="#" title="골드톤">골드톤 워치</a></dd>
+                                        <dd><a href="#" title="로즈골드톤">로즈골드톤 워치</a></dd>
+                                        <dd><a href="#" title="스테인리스">스테인리스 스틸 워치</a></dd>
+                                        <dd><a href="#" title="래더">래더 스트랩 워치</a></dd>
+                                        <dd><a href="#" title="실리콘">실리콘 스트랩 워치</a></dd>
+                                        <dd><a href="#" title="메탈">메탈 브레이슬릿 워치</a></dd>
+                                    </dl>
+                                    <dl class="sub sub2">
+                                        <dt>컬러별 쇼핑</dt>
+                                        <dd><a href="#" title="블랙톤">블랙톤 워치</a></dd>
+                                        <dd><a href="#" title="레드톤">레드톤 워치</a></dd>
+                                        <dd><a href="#" title="화이트톤">화이트톤 워치</a></dd>
+                                        <dd><a href="#" title="블루톤">블루톤 워치</a></dd>
+                                        <dd><a href="#" title="그레이톤">그레이톤 워치</a></dd>
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt><a href="#">여성용 워치 둘러보기</a></dt>
+                                        <dd><a href="#"><img src="./img/gnb_img2.jpg" alt="여성용 워치"></a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>액세서리
+                            <div class="item_content">
+                                <div class="sub_wrap">
+                                    <ul class="accessory">
+                                        <li class="sub">
+                                            <dt><a href="#" title="크리스털">크리스털 펜</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="홀더">키 홀더</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="핸드백">핸드백</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="스마트폰">스마트폰 케이스</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="선글라스">선글라스</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="SWAROVSKI">SWAROVSKI 마스크</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="디지털">디지털 악세서리</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="헤어">헤어 악세서리</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="바디">바디 주얼리</a></dt>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>스와로브스키의 세계
+                            <div class="item_content item_content2">
+                                <div class="sub_wrap">
+                                    <dl class="sub sub2">
+                                        <dt>스포트라이트</dt>
+                                        <dd><a href="#" title="Aquazzura">Aquazzura for Swarovski Creators Lab</a></dd>
+                                        <dd><a href="#" title="BMW">BMW, 스와로브스키를 만나다</a></dd>
+                                        <dd><a href="#" title="아디다스와">아디다스와 스와로브스키의 만남</a></dd>
+                                        <dd><a href="#" title="제임스">제임스 터렐의 Umbra</a></dd>
+                                        <dd><a href="#" title="performance">Art of performance</a></dd>
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt>스타일 스토리</dt>
+                                        <dd><a href="#" title="가이드">스타일 가이드 : 링</a></dd>
+                                        <dd><a href="#" title="스타일">스타일 가이드 : 이어링</a></dd>
+                                        <dd><a href="#" title="Lucent">Lucent</a></dd>
+                                        <dd><a href="#" title="Millenia">Millenia</a></dd>
+                                        <dd><a href="#" title="Dextera">Dextera</a></dd>
+                                        <dd><a href="#" title="Harmonia">Harmonia</a></dd>
+                                        <!-- <dd><a href="#" title="가이드">주얼리 스타일 가이드</a></dd>
+                                        <dd><a href="#" title="컬러풀하게">컬러풀하게 주얼리 스타일링하기</a></dd> -->
+                                    </dl>
+                                    <dl class="sub sub2">
+                                        <dt>인사이드 스와로브스키</dt>
+                                        <dd><a href="#" title="지속">지속 가능성</a></dd>
+                                        <dd><a href="#" title="기후">기후 중립적 배송 및 상품</a></dd>
+                                        <dd><a href="#" title="새로운">새로운 매장 컨셉</a></dd>
+                                        <dd><a href="#" title="회사소개">회사소개</a></dd>
+                                        <dd><a href="#" title="법인구매">법인구매</a></dd>
+                                        <dd><a href="#" title="프로페셔널">프로페셔널</a></dd>
+                                        <!-- <dd><a href="#" title="Swarovski">Swarovski Created Diamonds</a></dd>
+                                        <dd><a href="#" title="채용정보">채용정보</a></dd> -->
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt><a href="#">Aquazzura for Swarovski Creators Lab</a></dt>
+                                        <dd><a href="#"><img src="./img/gnb_img3.jpg" alt="Aquazzura for Swarovski Creators Lab"></a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="search">
+                            <input type="search" placeholder="검색어 입력" id="search">
+                            <label for="search"><span class="material-symbols-outlined search material-icons">search</span></label>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="h_bottom">
+                <!-- main navigation -->
+                <a href="index.html"><img src="./img/logo.jpg" alt="Swarovski logo" id="logo"></a>
+                <nav class="h_gnb">
+                    <ul>
+                        <li><a href="#" title="NewItem">신상품</a></li>
+                        <li>주얼리
+                            <div class="item_content">
+                                <div class="sub_wrap">
+                                    <dl class="sub">
+                                        <dt>네크리스&펜던트</dt>
+                                        <dd><a href="#" title="네크리스">네크리스</a></dd>
+                                        <dd><a href="#" title="펜던트">펜던트</a></dd>
+                                        <dd><a href="#" title="초커">초커 네크리스</a></dd>
+                                        <dd><a href="#" title="세트">세트</a></dd>
+                                    </dl>
+                                    <dl class="sub sub2">
+                                        <dt>브레이슬릿</dt>
+                                        <dd><a href="#" title="체인">체인 브레이슬릿</a></dd>
+                                        <dd><a href="#" title="브레이슬릿">길이 조절 브레이슬릿</a></dd>
+                                        <dd><a href="#" title="테니스">테니스 브레이슬릿</a></dd>
+                                        <dd><a href="#" title="뱅글">뱅글 & 커프</a></dd>
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt>이어링</dt>
+                                        <dd><a href="#" title="스터드">스터드 이어링</a></dd>
+                                        <dd><a href="#" title="드롭">드롭 이어링</a></dd>
+                                        <dd><a href="#" title="후프">후프 이어링</a></dd>
+                                        <dd><a href="#" title="클럽">클럽 이어링</a></dd>
+                                        <dd><a href="#" title="이어링">이어링 커브</a></dd>
+                                        <dd><a href="#" title="싱글">싱글 이어링</a></dd>
+                                    </dl>
+                                    <dl class="sub sub2">
+                                        <dt>링</dt>
+                                        <dd><a href="#" title="헤일로">헤일로 링</a></dd>
+                                        <dd><a href="#" title="밴드">밴드 링</a></dd>
+                                        <dd><a href="#" title="칵테일">칵테일 링</a></dd>
+                                        <dd><a href="#" title="모티브">모티브 링</a></dd>
+                                        <dd><a href="#" title="오픈">오픈 링</a></dd>
+                                        <dd><a href="#" title="스택">스택 링</a></dd>
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt>인기 아이템</dt>
+                                        <dd><a href="#"><img src="./img/gnb_img1.jpg" alt="인기 아이템"></a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>워치
+                            <div class="item_content">
+                                <div class="sub_wrap">
+                                    <dl class="sub">
+                                        <dt><a href="#">여성용 워치</a></dt>
+                                    </dl>
+                                    <dl class="sub sub2">
+                                        <dt><a href="#">워치 스트랩</a></dt>
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt>소재별 쇼핑</dt>
+                                        <dd><a href="#" title="골드톤">골드톤 워치</a></dd>
+                                        <dd><a href="#" title="로즈골드톤">로즈골드톤 워치</a></dd>
+                                        <dd><a href="#" title="스테인리스">스테인리스 스틸 워치</a></dd>
+                                        <dd><a href="#" title="래더">래더 스트랩 워치</a></dd>
+                                        <dd><a href="#" title="실리콘">실리콘 스트랩 워치</a></dd>
+                                        <dd><a href="#" title="메탈">메탈 브레이슬릿 워치</a></dd>
+                                    </dl>
+                                    <dl class="sub sub2">
+                                        <dt>컬러별 쇼핑</dt>
+                                        <dd><a href="#" title="블랙톤">블랙톤 워치</a></dd>
+                                        <dd><a href="#" title="레드톤">레드톤 워치</a></dd>
+                                        <dd><a href="#" title="화이트톤">화이트톤 워치</a></dd>
+                                        <dd><a href="#" title="블루톤">블루톤 워치</a></dd>
+                                        <dd><a href="#" title="그레이톤">그레이톤 워치</a></dd>
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt><a href="#">여성용 워치 둘러보기</a></dt>
+                                        <dd><a href="#"><img src="./img/gnb_img2.jpg" alt="여성용 워치"></a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>액세서리
+                            <div class="item_content">
+                                <div class="sub_wrap">
+                                    <ul class="accessory">
+                                        <li class="sub">
+                                            <dt><a href="#" title="크리스털">크리스털 펜</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="홀더">키 홀더</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="핸드백">핸드백</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="스마트폰">스마트폰 케이스</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="선글라스">선글라스</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="SWAROVSKI">SWAROVSKI 마스크</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="디지털">디지털 악세서리</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="헤어">헤어 악세서리</a></dt>
+                                        </li>
+                                        <li class="sub">
+                                            <dt><a href="#" title="바디">바디 주얼리</a></dt>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>스와로브스키의 세계
+                            <div class="item_content item_content2">
+                                <div class="sub_wrap">
+                                    <dl class="sub sub2">
+                                        <dt>스포트라이트</dt>
+                                        <dd><a href="#" title="Aquazzura">Aquazzura for Swarovski Creators Lab</a></dd>
+                                        <dd><a href="#" title="BMW">BMW, 스와로브스키를 만나다</a></dd>
+                                        <dd><a href="#" title="아디다스와">아디다스와 스와로브스키의 만남</a></dd>
+                                        <dd><a href="#" title="제임스">제임스 터렐의 Umbra</a></dd>
+                                        <dd><a href="#" title="performance">Art of performance</a></dd>
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt>스타일 스토리</dt>
+                                        <dd><a href="#" title="가이드">스타일 가이드 : 링</a></dd>
+                                        <dd><a href="#" title="스타일">스타일 가이드 : 이어링</a></dd>
+                                        <dd><a href="#" title="Lucent">Lucent</a></dd>
+                                        <dd><a href="#" title="Millenia">Millenia</a></dd>
+                                        <dd><a href="#" title="Dextera">Dextera</a></dd>
+                                        <dd><a href="#" title="Harmonia">Harmonia</a></dd>
+                                        <!-- <dd><a href="#" title="가이드">주얼리 스타일 가이드</a></dd>
+                                        <dd><a href="#" title="컬러풀하게">컬러풀하게 주얼리 스타일링하기</a></dd> -->
+                                    </dl>
+                                    <dl class="sub sub2">
+                                        <dt>인사이드 스와로브스키</dt>
+                                        <dd><a href="#" title="지속">지속 가능성</a></dd>
+                                        <dd><a href="#" title="기후">기후 중립적 배송 및 상품</a></dd>
+                                        <dd><a href="#" title="새로운">새로운 매장 컨셉</a></dd>
+                                        <dd><a href="#" title="회사소개">회사소개</a></dd>
+                                        <dd><a href="#" title="법인구매">법인구매</a></dd>
+                                        <dd><a href="#" title="프로페셔널">프로페셔널</a></dd>
+                                        <!-- <dd><a href="#" title="Swarovski">Swarovski Created Diamonds</a></dd>
+                                        <dd><a href="#" title="채용정보">채용정보</a></dd> -->
+                                    </dl>
+                                    <dl class="sub">
+                                        <dt><a href="#">Aquazzura for Swarovski Creators Lab</a></dt>
+                                        <dd><a href="#"><img src="./img/gnb_img3.jpg" alt="Aquazzura for Swarovski Creators Lab"></a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mainbg"></div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main>
+            <section>
+                <div class="sub_web">
+                    <img src="./img/newitem.jpg" alt="신상품">
+                    <h2>신상품</h2>
+                    <p>스와로브스키의 새로운 컬렉션과 함께 나만의 마법을 펼쳐보세요. 꿈꾸는 세상이 펼쳐집니다.</p>
+                </div>
+            </section>
+            <section class="item_grid">
+                <article class="menubar">
+                    <ul>
+                        <li><a href="#" title="소재">소재</a></li>
+                        <li><a href="#" title="색상">색상</a></li>
+                        <li><a href="#" title="가격">가격</a></li>
+                        <li><a href="#" title="카테고리">카테고리</a></li>
+                    </ul>
+                </article>
+                <div class="container">
+                    <div class="item item1"><a href="#" title="신상품">
+                        <img src="./img/newitem/1.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item2"><a href="#" title="신상품">
+                        <img src="./img/newitem/2.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item3"><a href="#" title="신상품">
+                        <img src="./img/newitem/3.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item4"><a href="#" title="신상품">
+                        <img src="./img/newitem/4.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item5"><a href="#" title="신상품">
+                        <img src="./img/newitem/5.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item6"><a href="#" title="신상품">
+                        <img src="./img/newitem/6.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item7"><a href="#" title="신상품">
+                        <img src="./img/newitem/7.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item8"><a href="#" title="신상품">
+                        <img src="./img/newitem/8.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item9"><a href="#" title="신상품">
+                        <img src="./img/newitem/9.jpg" alt="상품사진" class="article article1">
+                    </a></div>
+                    <div class="item item10"><a href="#" title="신상품">
+                        <img src="./img/newitem/10.jpg" alt="상품사진" class="article article2">
+                    </a></div>
+                    <div class="item item11"><a href="#" title="신상품">
+                        <img src="./img/newitem/12.jpg" alt="상품사진" class="article article3">
+                    </a></div>
+                    <div class="item item12"><a href="#" title="신상품">
+                        <img src="./img/newitem/13.jpg" alt="상품사진" class="article article4">
+                    </a></div>
+                    <div class="item item13"><a href="#" title="신상품">
+                        <img src="./img/newitem/14.jpg" alt="상품사진" class="article article5">
+                    </a></div>
+                    <div class="item item1"><a href="#" title="신상품">
+                        <img src="./img/newitem/15.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item2"><a href="#" title="신상품">
+                        <img src="./img/newitem/16.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item3"><a href="#" title="신상품">
+                        <img src="./img/newitem/18.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item4"><a href="#" title="신상품">
+                        <img src="./img/newitem/19.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item5"><a href="#" title="신상품">
+                        <img src="./img/newitem/20.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item6"><a href="#" title="신상품">
+                        <img src="./img/newitem/21.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item7"><a href="#" title="신상품">
+                        <img src="./img/newitem/22.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item8"><a href="#" title="신상품">
+                        <img src="./img/newitem/23.jpg" alt="상품사진" class="article">
+                    </a></div>
+                    <div class="item item9"><a href="#" title="신상품">
+                        <img src="./img/newitem/24.jpg" alt="상품사진" class="article article1">
+                    </a></div>
+                    <div class="item item10"><a href="#" title="신상품">
+                        <img src="./img/newitem/25.jpg" alt="상품사진" class="article article2">
+                    </a></div>
+                    <div class="item item11"><a href="#" title="신상품">
+                        <img src="./img/newitem/26.jpg" alt="상품사진" class="article article3">
+                    </a></div>
+                    <div class="item item12"><a href="#" title="신상품">
+                        <img src="./img/newitem/27.jpg" alt="상품사진" class="article article4">
+                    </a></div>
+                    <div class="item item13"><a href="#" title="신상품">
+                        <img src="./img/newitem/28.jpg" alt="상품사진" class="article article5">
+                    </a></div>
+                    <div class="item item13"><a href="#" title="신상품">
+                        <img src="./img/newitem/29.jpg" alt="상품사진" class="article5">
+                    </a></div>
+                    <div class="item item13"><a href="#" title="신상품">
+                        <img src="./img/newitem/30.jpg" alt="상품사진" class="article article5">
+                    </a></div>
+                    <div class="item item13"><a href="#" title="신상품">
+                        <img src="./img/newitem/31.jpg" alt="상품사진" class="article article5">
+                    </a></div>
+                </div>
+
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <a href="#" title="위로 바로가기" class="top_btn">
+                <span class="material-symbols-outlined">
+                arrow_upward
+                </span>
+            </a>
+    
+            <div class="footer_bottom">
+                <div class="f_inner">
+                    <nav class="f_gnb">
+                        <ul>
+                            <li>스와로브스키 고객 관리 센터
+                                <ul class="sub">
+                                    <li><a href="#" title="고객 서비스 개요">고객 서비스 개요</a></li>
+                                    <li><a href="#" title="주문 상태">주문 상태</a></li>
+                                    <li><a href="#" title="기프트 카드 잔액">기프트 카드 잔액</a></li>
+                                    <li><a href="#" title="배송">배송</a></li>
+                                    <li><a href="#" title="반품 및 교환">반품 및 교환</a></li>
+                                    <li><a href="#" title="온라인 수선 문의">온라인 수선 문의</a></li>
+                                    <li><a href="#" title="문의">문의</a></li>
+                                    <li><a href="#" title="COVID-19">COVID-19</a></li>
+                                </ul>
+                            </li>
+                            <li>회사소개
+                                <ul class="sub">
+                                    <li><a href="#" title="회사소개">회사소개</a></li>
+                                    <li><a href="#" title="지속 가능성">지속 가능성</a></li>
+                                    <li><a href="#" title="채용 정보">채용 정보</a></li>
+                                    <li><a href="#" title="법인구매">법인구매</a></li>
+                                    <li><a href="#" title="프로페셔널">프로페셔널</a></li>
+                                    <li><a href="#" title="사이트 맵">사이트 맵</a></li>
+                                    <li><a href="#" title="Swarovski Created Diamonds">Swarovski Created Diamonds</a></li>
+                                    <li><a href="#" title="Kristallwelten">Kristallwelten</a></li>
+                                </ul>
+                            </li>
+                            <li>멤버십
+                                <ul class="sub">
+                                    <li><a href="#" title="회원가입">회원가입</a></li>
+                                    <li><a href="#" title="Swarovski Club">Swarovski Club</a></li>
+                                    <li><a href="#" title="Swarovski Crystal Society (SCS)">Swarovski Crystal Society (SCS)</a></li>
+                                </ul>
+                            </li>
+                            <li>법적고지
+                                <ul class="sub">
+                                    <li><a href="#" title="저작권">저작권</a></li>
+                                    <li><a href="#" title="이용약관">이용약관</a></li>
+                                    <li><a href="#" title="개인정보 보호">개인정보 보호</a></li>
+                                    <li><a href="#" title="쿠키 동의">쿠키 동의</a></li>
+                                    <li><a href="#" title="회사 정보">회사 정보</a></li>
+                                    <li><a href="#" title="REACH 정보">REACH 정보</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address>Copyright ⓒ 2022 Swarovski. All rights reserved.<br>SWAROVSKI 및 SWAN 로고는 Swarovski AG의 등록상표입니다.</address>
+                    <div class="sns_icons">
+                        <a href="#" title="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" title="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" title="twitter"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#" title="youtube"><i class="fa-brands fa-square-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+</html>

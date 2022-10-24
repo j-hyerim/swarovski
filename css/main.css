@@ -104,6 +104,9 @@ body {
     cursor:pointer;
     transition: 1s;
   }
+  .bestSwiper .swiper-slide img:hover{
+    transform: scale(1.1);
+  }
   /* 슬라이드 텍스트 */
   .bestSwiper .swiper-slide p{
     position: absolute;
