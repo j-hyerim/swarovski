@@ -147,6 +147,8 @@ spyEl.forEach(function(spyEl){
   .setClassToggle(spyEl,'show')
   .addTo(new ScrollMagic.Controller());
 });
+
+
 // jquery
 $(document).ready(function(){
         
@@ -185,18 +187,11 @@ $(document).ready(function(){
           // 'opacity':'0'
       });
     })
-//fotter text
-  $('.f_sd').mouseover(function(){
-    $('.f_text').css({
-        'top':'150px'
-        // 'opacity':'1'
-    });
-  })
-  $('.f_sd').mouseout(function(){
-    $('.f_text').css({
-        'top':'0px'
-        // 'opacity':'1'
-    });
+//footer text
+  $('.f_sd').hover(function(){
+    $(this).find('.f_text').stop().animate({'top':'0px'},400);
+  },function(){
+    $(this).find('.f_text').stop().animate({'top':'150px'},400);
   })
 
   $(document).snowfall({

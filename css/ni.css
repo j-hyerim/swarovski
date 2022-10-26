@@ -60,7 +60,7 @@ main{
     grid-area: article4;}
 .article5{
     width: 300px;
-    grid-area: article5;} */
+    /* grid-area: article5;} */ 
 .menubar{
     background: #fff;
     width: 1200px;
